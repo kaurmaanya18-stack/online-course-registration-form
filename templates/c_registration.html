@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Maanya Kaur">
+        <title>Online Course Registration Form</title>
+    </head>
+
+    <body bgcolor="lightpink">
+
+    <h1>
+        <font color="purple">
+            Online Vocational Course Registration
+        </font>
+    </h1>
+
+    <form action="/register" method="POST" target="_blank">
+
+        <label for="name">Student Name</label>
+        <input id="name" type="text" name="name"
+               placeholder="Maanya" required>
+        <br><br>
+
+        <label for="email">Email Id</label>
+        <input id="email" type="email" name="email_id"
+               required autocomplete="on">
+        <br><br>
+
+        <label for="mobile">Mobile No.</label>
+        <input id="mobile" type="tel" name="mobile" required>
+        <br><br>
+
+        <label for="age">Age</label>
+        <input id="age" type="number" name="age"
+               required min="10">
+        <br><br>
+
+        <label for="r_pswd">Registration Password</label>
+        <input id="r_pswd" type="password" name="r_pswd" required>
+        <br><br>
+
+        <p>Gender</p>
+
+        <label for="male">Male</label>
+        <input id="male" type="radio" name="gender" value="Male" required>
+
+        <label for="female">Female</label>
+        <input id="female" type="radio" name="gender" value="Female">
+
+        <label for="other">Others</label>
+        <input id="other" type="radio" name="gender" value="Others">
+        <br><br>
+
+        <p>Skills</p>
+
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css" name="skills" value="CSS">
+
+        <label for="js">JavaScript</label>
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+
+        <label for="py">Python</label>
+        <input type="checkbox" id="py" name="skills" value="Python">
+
+        <label for="ot">Other</label>
+        <p> Specify
+        <textarea id="ot" name="other_skills" rows="10" cols="20"></textarea>
+        </p>
+        <br><br>
+
+        <label for="course">Course</label>
+        <select id="course" name="course">
+            <option value="">-- Select a Course --</option>
+            <option value="w_d">Web Development</option>
+            <option value="p_p">Python Programming</option>
+            <option value="d_a">Data Analytics</option>
+            <option value="d_m">Digital Marketing</option>
+        </select>
+        <br><br>
+
+        <input type="hidden" name="form_name"
+               value="Online Course Registration">
+
+        <label for="dt">Date</label>
+        <input id="dt" type="date" name="dt" required>
+        <br><br>
+
+        <label for="tm">Time</label>
+        <input id="tm" type="time" name="tm" required>
+        <br><br>
+
+        <label for="y">Why do you want to join?</label>
+        <p>
+        <textarea id="y" name="y" rows="10" cols="20" required></textarea>
+        </p>
+        <br><br>
+
+        <label for="up">Upload photograph for certificate printing</label>
+        <input id="up" type="file" name="up" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    </body>
+</html>
